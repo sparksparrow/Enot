@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Enot</string>
+    <string name="title_activity_note">activity_note</string>
+    <string name="notes">Notes</string>
+</resources>

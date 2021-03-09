@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enotbackground"
+    tools:context=".activity_reg">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="314dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintVertical_bias="0.27"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="56dp"
+
+        android:background="#505567"
+
+        android:text="Create account"
+        android:textColor="#fdffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/login_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="login"
+        android:inputType="textEmailAddress"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textColor="#181632"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textColorHint="#181632"
+        android:textColorLink="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textReg" />
+
+    <EditText
+        android:id="@+id/password_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:password="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textColor="#181632"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textColorHint="#181632"
+        android:textColorLink="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_reg" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:password="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textColor="#181632"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textColorHint="#181632"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_reg" />
+
+    <TextView
+        android:id="@+id/textReg"
+        android:layout_width="239dp"
+        android:layout_height="56dp"
+        android:text="New one?"
+        android:textAlignment="center"
+        android:textColor="#181632"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
